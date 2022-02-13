@@ -17,7 +17,7 @@
     "test": "craco test",
     "eject": "craco eject",
     "format": "prettier --check ./src",
-  "format:fix": "prettier --write ./src"
+    "format:fix": "prettier --write ./src"
   },
   "lint-staged": {
     "src/**/*.{ts,tsx}": [
@@ -52,6 +52,8 @@
   },
   "devDependencies": {
     "@craco/craco": "^6.4.3",
+    "eslint": "^8.9.0",
+    "eslint-plugin-react": "^7.28.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.3",
     "prettier": "^2.5.1"
