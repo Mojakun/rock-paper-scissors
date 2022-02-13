@@ -18,12 +18,10 @@
     "eject": "craco eject",
     "prepare": "husky install",
     "format": "prettier --check ./src",
-    "format:fix": "prettier --write ./src"
+    "format:fix": "prettier --write ./src",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{ts,tsx}": [
-      "eslint --ext .tsx --ext .ts ./src --fix"
-    ],
     "./src/**": [
       "prettier --write ."
     ]

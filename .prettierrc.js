@@ -7,5 +7,5 @@ module.exports = {
   semi: true,
   singleQuote: true,
   bracketSpacing: true,
-  jsxBracketSameLine: false
+  jsxBracketSameLine: false,
 };
