@@ -1,10 +1,11 @@
-import Tmp from '@pages/Tmp';
+import { BrowserRouter } from 'react-router-dom';
+import Router from './router/Router';
 
 function App() {
   return (
-    <>
-      <Tmp />
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
