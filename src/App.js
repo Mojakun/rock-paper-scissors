@@ -1,9 +1,9 @@
-import Tmp from '@pages/Tmp'
+import Tmp from '@pages/Tmp';
 
 function App() {
   return (
     <>
-        <Tmp/>
+      <Tmp />
     </>
   );
 }

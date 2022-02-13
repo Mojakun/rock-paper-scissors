@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const Tmp = () => {
-  return (
-    <div>test</div>
-  )
-}
+  return <div>test</div>
+};
 
-export default Tmp
+export default Tmp;
