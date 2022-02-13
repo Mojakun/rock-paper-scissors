@@ -16,6 +16,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
+    "prepare": "husky install",
     "format": "prettier --check ./src",
     "format:fix": "prettier --write ./src"
   },
