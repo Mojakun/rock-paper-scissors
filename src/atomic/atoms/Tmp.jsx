@@ -4,4 +4,4 @@ function Tmp() {
   return <div>Tmp</div>;
 }
 
-export default Tmp;
+export default Tmp
