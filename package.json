@@ -23,9 +23,7 @@
     "lint-staged": "lint-staged"
   },
   "lint-staged": {
-    "./src/*.{jsx,js}": [
-      "prettier --write ."
-    ]
+    "*.{js,ts,css,jsx}": "prettier --write"
   },
   "husky": {
     "hooks": {
