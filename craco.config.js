@@ -16,6 +16,7 @@ module.exports = {
       '@atoms': path.resolve(srcPath, 'atomic/atoms'),
       '@molecules': path.resolve(srcPath, 'atomic/molecules'),
       '@organisms': path.resolve(srcPath, 'atomic/organisms'),
+      '@templates': path.resolve(srcPath, 'atomic/templates'),
       '@pages': path.resolve(srcPath, 'atomic/pages'),
     },
   },
