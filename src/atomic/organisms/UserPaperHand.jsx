@@ -1,7 +1,7 @@
 import React from 'react';
 
-const UserPaperHand = () => {
-  return <div>UserPaperHand</div>;
+const UserPaperHand = ({ onClick }) => {
+  return <div onClick={onClick}>UserPaperHand</div>;
 };
 
 export default UserPaperHand;

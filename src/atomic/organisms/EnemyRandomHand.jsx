@@ -4,7 +4,7 @@ const EnemyRandomHand = ({ value }) => {
   if (value == RockPaerScissorsModel.ROCK) {
     return <div>ROCK</div>;
   }
-  if (value == RockPaerScissorsModel.PAER) {
+  if (value == RockPaerScissorsModel.PAPER) {
     return <div>PAER</div>;
   }
   if (value == RockPaerScissorsModel.SCISSORS) {
