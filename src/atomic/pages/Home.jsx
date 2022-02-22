@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import Container from '@templates/Container';
+import GridContainer from '@templates/GridContainer';
 import EnemyRandomHand from '@organisms/EnemyRandomHand';
-import UserScissorsHand from '@organisms/UserScissorsHand';
-import UserRockHand from '@organisms/UserRockHand';
-import UserPaperHand from '@organisms/UserPaperHand';
+import UserHandByScissors from '@organisms/UserHandByScissors';
+import UserHandByRock from '@organisms/UserHandByRock';
+import UserHandByPaper from '@organisms/UserHandByPaper';
 import RockPaerScissorsModel from '@models/RockPaerScissorsModel';
 import GameModel from '@models/GameModel';
 import Result from '@organisms/Result';
@@ -13,6 +13,7 @@ const Home = () => {
   const [result, setResult] = useState(0);
 
   const onClickRockHand = useCallback(() => {
+    console.log('hakka');
     setResult(RockPaerScissorsModel.judgementByRock(enemyValue));
   });
   const onClickPaerHand = useCallback(() => {
@@ -23,13 +24,13 @@ const Home = () => {
   });
 
   return (
-    <Container>
+    <GridContainer>
       <Result result={result} />
       <EnemyRandomHand value={enemyValue} />
-      <UserRockHand onClick={onClickRockHand} />
-      <UserPaperHand onClick={onClickPaerHand} />
-      <UserScissorsHand onClick={onClickScissorsHand} />
-    </Container>
+      <UserHandByRock onClick={onClickRockHand} />
+      <UserHandByPaper onClick={onClickPaerHand} />
+      <UserHandByScissors onClick={onClickScissorsHand} />
+    </GridContainer>
   );
 };
 
