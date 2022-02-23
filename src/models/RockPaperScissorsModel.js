@@ -1,12 +1,14 @@
 import GameModel from './GameModel';
-class RockPaerScissorsModel {
+class RockPaperScissorsModel {
   static ROCK = 1;
-  static PAPER = 2;
-  static SCISSORS = 3;
+  static SCISSORS = 2;
+  static PAPER = 3;
 
-  static ROCK_WINNER_HAND = this.PAPER;
-  static PAPER_WINNER_HAND = this.SCISSORS;
-  static SCISSORS__WINNER_HAND = this.ROCK;
+  static ROCK_WINNER_HAND = this.SCISSORS;
+  static SCISSORS_WINNER_HAND = this.PAPER;
+  static PAPER_WINNER_HAND = this.ROCK;
+
+  static RockPaperScissorsMap = [this.ROCK, this.SCISSORS, this.PAPER];
 
   static isRockWinnerHand(value) {
     return this.ROCK_WINNER_HAND === value;
@@ -15,7 +17,7 @@ class RockPaerScissorsModel {
     return this.PAPER_WINNER_HAND === value;
   }
   static isScissorsWinnerHand(value) {
-    return this.SCISSORS__WINNER_HAND === value;
+    return this.SCISSORS_WINNER_HAND === value;
   }
 
   static judgementByRock(value) {
@@ -33,6 +35,10 @@ class RockPaerScissorsModel {
     if (this.SCISSORS === value) return GameModel.EVEN;
     return GameModel.LOSE;
   }
+
+  static enemyRandomHand() {
+    return this.RockPaperScissorsMap[Math.floor(Math.random() * this.RockPaperScissorsMap.length)];
+  }
 }
 
-export default RockPaerScissorsModel;
+export default RockPaperScissorsModel;
