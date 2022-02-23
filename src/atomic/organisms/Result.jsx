@@ -5,6 +5,9 @@ const Result = ({ result }) => {
   if (result === GameModel.WIN) {
     return <div>勝ち</div>;
   }
+  if (result === GameModel.EVEN) {
+    return <div>あいこ</div>;
+  }
   if (result === GameModel.LOSE) {
     return <div>負け</div>;
   }
